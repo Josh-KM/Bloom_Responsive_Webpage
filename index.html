@@ -8,8 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     </head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <body>
+
+        <!-- Header Section / Navigation -->
         <header>
             <nav class="container nav">
+                <!-- Logo -->
                 <div class="logo"><img src="/images/edit_bloom.png" alt=""></div>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -21,6 +24,7 @@
             </nav>
         </header>
 
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-section content-hero">
                 <div class="hero-content">
@@ -35,23 +39,29 @@
             </div>
         </section>
 
+        <!-- Services / Feature Cards -->
         <div class="card-section">
             <div class="main-card card-div">
                 <h1>This is a Heading</h1>
                 <div class="cards">
 
+                    <!-- Services Card Item -->
                     <div>
                         <div class="card-1"></div>
                         <h3>Aqquam et laculls Saplen</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic deleniti illo iste harum repellat debitis voluptas incidunt</p>
                         <button class="card-btn" type="button">Learn More</button>
                     </div>
+
+                    <!-- Services Card Item -->
                     <div>
                         <div class="card-2"></div>
                         <h3>Aqquam et laculls Saplen</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic deleniti illo iste harum repellat debitis voluptas incidunt</p>
                         <button class="card-btn" type="button">Learn More</button>
                     </div>
+
+                    <!-- Services Card Item -->
                     <div>
                         <div class="card-3"></div>
                         <h3>Aqquam et laculls Saplen</h3>
@@ -63,10 +73,11 @@
             </div>
         </div>
 
+        <!-- Footer Section -->
         <footer>
             <div class="main-footer footer-section">
-
                 <div>
+                    <!-- Blog / Recent Posts Column -->
                     <h2>Latest Posts</h2>
                     <div class="footer-content">
                         <div class="footer-date">
@@ -100,6 +111,7 @@
                     </div>
                 </div>
 
+                <!-- About Summary -->
                 <div>
                     <h2>About</h2>
                     <div class="footer-div-para">
@@ -107,7 +119,8 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestiae culpa earum quaerat commodi expedita repellendus.</p>
                     </div>
                 </div>
-
+                
+                <!-- Social Medial Links -->
                 <div>
                     <h2>Stay Connected</h2>
                     <div class="footer-socials">
@@ -119,9 +132,14 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Copyright Section -->
         <div class="copyright">
             <div class="copyright-section copyright-content">
-                <p>Copyright (c) 2026. All Rights Reserved. Responsive Webpage Design - Bloom: <a href="https://github.com/Josh-KM" target="_blank"><i class="bi bi-github"></i> Josh-KM</a></p>
+                <p>Copyright &copy; <span id="year"></span>. All Rights Reserved. Bloom_Responsive_Webpage -- Design by: &nbsp <a href="https://github.com/Josh-KM" target="_blank"><i class="bi bi-github" style="color: #000;"></i> Josh-KM</a></p>
+                <script>
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script>
             </div>
         </div>
     </body>
